@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        outline: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        border: 3px solid red;
+        grid-template-columns: repeat(3, 220px);
+        grid-template-rows: repeat(2, 350px);
+        height: 100vh;
+        gap: 30px;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+      }
+      .container {
+        overflow: hidden !important;
+        border: 2px solid #000;
+        height: 350px;
+        width: 220px;
+        border-radius: 4px;
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+      }
+      .image_container {
+        height: 100%;
+        width: 100%;
+      }
+      .container:hover {
+        transform: scale(1.1);
+      }
+      .image_holder {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-position: top center;
+        transition: all 2s ease-in-out;
+        cursor: pointer;
+        border-radius: 4px;
+        transition-delay: 0.3s;
+      }
+      .image_holder:hover {
+        background-position: bottom center;
+      }
+      .img1 {
+        background-image: url("https://i.postimg.cc/Z5q1WBSQ/personal-portfolios-02-600x2814.jpg");
+      }
+      .img2 {
+        background-image: url("https://i.postimg.cc/d10vvH0h/de6817a02eb4b499547be8bb9bafd5dc.png");
+      }
+      .img3 {
+        background-image: url("https://i.postimg.cc/3RG1y7NV/full-template-578-first-portfolio.jpg");
+      }
+      .img4 {
+        background-image: url("https://i.postimg.cc/d1FvXsbj/tween-agency-free-bootstrap-portfolio-html-template.jpg");
+      }
+      .img5 {
+        background-image: url("https://i.postimg.cc/VLrPL0Wk/bb4e5b24703345a73c9d565c0c82c393.jpg");
+      }
+      .img6 {
+        background-image: url("https://i.postimg.cc/BbN9L2wj/trip-spot-full.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- image 1 -->
+    <div class="container">
+      <div class="image_container scale">
+        <div class="image_holder img1"></div>
+      </div>
+    </div>
+    <!-- image 2 -->
+    <div class="container">
+      <div class="image_container scale">
+        <div class="image_holder img2"></div>
+      </div>
+    </div>
+    <!-- image 3 -->
+    <div class="container">
+      <div class="image_container scale">
+        <div class="image_holder img3"></div>
+      </div>
+    </div>
+    <!-- image 4 -->
+    <div class="container">
+      <div class="image_container scale">
+        <div class="image_holder img4"></div>
+      </div>
+    </div>
+    <!-- image 5 -->
+    <div class="container">
+      <div class="image_container scale">
+        <!-- image -->
+        <div class="image_holder img5"></div>
+      </div>
+    </div>
+    <!-- image 6 -->
+    <div class="container">
+      <div class="image_container scale">
+        <!-- image -->
+        <div class="image_holder img6"></div>
+      </div>
+    </div>
+  </body>
+</html>
